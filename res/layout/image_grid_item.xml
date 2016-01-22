@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- add attributes to configure the image view -->
+<com.android.volley.toolbox.NetworkImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/grid_item"
+    android:layout_marginLeft="30dp"/>

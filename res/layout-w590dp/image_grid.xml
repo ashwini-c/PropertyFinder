@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- add attributes to configure the GridView -->
+<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/grid_view"
+    style="@style/PhotoGridLayout"
+    android:horizontalSpacing="16dp"
+    android:numColumns="2"
+    android:paddingLeft="10dp"
+    android:verticalSpacing="16dp" />

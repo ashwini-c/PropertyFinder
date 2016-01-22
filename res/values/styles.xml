@@ -1,0 +1,10 @@
+<resources>
+
+    <style name="activated"></style>
+
+    <style name="PhotoGridLayout">
+        <item name="android:drawSelectorOnTop">true</item>
+        <item name="android:listSelector">@drawable/image_grid_selector</item>
+    </style>
+
+</resources>

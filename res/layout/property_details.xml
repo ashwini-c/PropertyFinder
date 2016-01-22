@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab_host"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp" >
+
+            <ScrollView
+                android:id="@+id/info_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/property_details_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+
+                    <TextView
+                        android:id="@+id/property_details_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="normal"
+                        android:typeface="sans" />
+
+                    <TextView
+                        android:id="@+id/property_details_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="normal"
+                        android:typeface="sans" />
+
+                    <TextView
+                        android:id="@+id/property_details_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="normal"
+                        android:typeface="sans" />
+
+                    <TextView
+                        android:id="@+id/property_details_agency_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="normal"
+                        android:typeface="sans" />
+
+                    <TextView
+                        android:id="@+id/property_details_agency_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="normal"
+                        android:typeface="sans" />
+
+                    <TextView
+                        android:id="@+id/property_details_body"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="normal"
+                        android:typeface="sans" />
+                </LinearLayout>
+            </ScrollView>
+
+            <FrameLayout
+                android:id="@+id/photos_tab"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <fragment
+                    android:id="@+id/image_grid_fragment"
+                    android:name="org.stevej.android.propertyfinder.fragments.ImageGridFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:tag="ImageGridFragment" />
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</TabHost>
